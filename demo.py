@@ -8,7 +8,8 @@ import models.crnn as crnn
 
 
 model_path = './data/crnn.pth'
-img_path = './data/demo.png'
+#img_path = './data/demo.png'
+img_path = '../TextBoxes_plusplus/docker_custom/crops/demo2/1.jpg'
 alphabet = '0123456789abcdefghijklmnopqrstuvwxyz'
 
 model = crnn.CRNN(32, 1, 37, 256)
