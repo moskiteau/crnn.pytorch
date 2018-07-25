@@ -20,7 +20,7 @@ import models.crnn as crnn
 
 @click.command()
 @click.option('--image-path', type=str, default=None, help='Path to image')
-@click.option('--alphabet', type=str, default="0123456789abcdefghijklmnopqrstuvwxyz", help='Alphabet to recognize')
+@click.option('--alphabet', type=str, default="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@.0123456789,:-()'", help='Alphabet to recognize')
 @click.option('--snapshot', type=str, default="data/crnn.pth", help='Pre-trained weights')
 @click.option('--gpu', type=str, default='0', help='List of GPUs for parallel training, e.g. 0,1,2,3')
 @click.option('--visualize', type=bool, default=False, help='Visualize output')
